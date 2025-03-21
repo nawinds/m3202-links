@@ -87,8 +87,8 @@ const config = {
             //     isCloseable: false,
             // },
             colorMode: {
-                defaultMode: 'dark',
-                respectPrefersColorScheme: false,
+                defaultMode: 'light',
+                respectPrefersColorScheme: true,
             },
             navbar: {
                 title: 'Полезные ссылки',
