@@ -110,7 +110,10 @@ const config = {
                         label: 'Архив',
                         position: 'left',
                         items: [
-
+                            {
+                                label: 'Семестр 1',
+                                href: '/archive/semester/1',
+                            }
                         ],
                     },
                     // {
