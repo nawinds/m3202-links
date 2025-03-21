@@ -1,10 +1,6 @@
 {
   "deadlines": [
     {
-      "name": "[Тест] Матан: РЗ «Определённые интегралы»",
-      "time": "21 Feb 2025 11:30:00 GMT+3"
-    },
-    {
       "name": "C++: Лаба 1. WayHome",
       "time": "25 Feb 2025 23:59:00 GMT+3"
     },
@@ -17,8 +13,13 @@
       "time": "4 Mar 2025 23:59:59 GMT+3"
     },
     {
-      "name": "ЭВМ: Лаба 1.2",
-      "time": "16 Mar 2025 23:59:59 GMT+3",
+      "name": "ЭВМ: Лаба 1.2 (soft)",
+      "time": "19 Mar 2025 23:59:59 GMT+3",
+      "url": "https://docs.google.com/document/d/11npNSgySpFy2EQb9KF3dYXWM2O29xWnVAciUWs4NbdM/edit?usp=sharing"
+    },
+    {
+      "name": "ЭВМ: Лаба 1.2 (HARD)",
+      "time": "26 Mar 2025 23:59:59 GMT+3",
       "url": "https://docs.google.com/document/d/11npNSgySpFy2EQb9KF3dYXWM2O29xWnVAciUWs4NbdM/edit?usp=sharing"
     },
     {
@@ -32,20 +33,14 @@
       "url": "https://classroom.github.com/a/F94lbM9T"
     },
     {
-      "name": "Экзамен по алгоритмам",
-      "time": "25 Jan 2025 12:00:00 GMT+3"
+      "name": "C++: Лаба №8. Ranges",
+      "time": "1 Apr 2025 23:59:00 GMT+3",
+      "url": "https://classroom.github.com/a/AMw6ugCA"
     },
     {
-      "name": "[Тест] Алгосы: Сдача лайвкодинга №2",
-      "time": "26 Dec 2024 19:00:00 GMT+3"
-    },
-    {
-      "name": "[Тест] Дискретка: Коллоквиум №2",
-      "time": "27 Dec 2024 18:00:00 GMT+3"
-    },
-    {
-      "name": "[Тест] Дискретка: Контрольная работа по формальной логике",
-      "time": "21 Dec 2024 13:30:00 GMT+3"
+      "name": "Алгосы: Лаба №10. Дейкстры :)",
+      "time": "2 Apr 2025 23:59:00 GMT+3",
+      "url": "https://sort-me.org/contest/302"
     },
     {
       "name": "Дискретка: ДЗ №4 по формальной логике",

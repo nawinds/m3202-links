@@ -44,13 +44,13 @@ const formatDeadline = (deadline) => {
 
     let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
     const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
-    const description = "Дедлайн добавлен с сайта m3100.nawinds.dev";
+    const description = "Дедлайн добавлен с сайта m3102.nawinds.dev";
     const link = deadline.url;
     const gcalLink = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
 
     let text = "";
     if (link) {
-        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5); ackground: rgba(157,128,218,0.3);"><a href=\"${link}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\">${deadlineName}</a></b>`;
+        text += `<b style="padding-left: 5px; border-left: 2px solid rgba(157,128,218,0.5);"><a href=\"${link}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\" onmouseover=\"this.style.opacity='0.8'\" onmouseout=\"this.style.opacity='1'\">${deadlineName}</a></b>`;
     } else {
         text += `<b style="padding-left: 8px;">${deadlineName}</b>`;
     }

@@ -1,6 +1,6 @@
-# Сайт полезных ссылок группы M3100 Университета ИТМО — [M3100.nawinds.dev](https://m3100.nawinds.dev)
+# Сайт полезных ссылок группы M3102 Университета ИТМО — [M3102.nawinds.dev](https://m3102.nawinds.dev)
 
-### Useful links website for M3100 group @ ITMO University — [M3100.nawinds.dev](https://m3100.nawinds.dev)
+### Useful links website for M3102 group @ ITMO University — [M3102.nawinds.dev](https://m3102.nawinds.dev)
 
 ---
 
