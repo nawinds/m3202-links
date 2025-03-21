@@ -4,12 +4,13 @@ description: Ссылки на ведомости группы M3102 по каж
 ---
 
 import BackButton from '@site/src/components/BackButton';
+import GradesTableLink from '@site/src/components/GradesTableLink';
+import EditPageLink from '@site/src/components/EditPageLink';
+import Ads from '@site/src/components/Ads';
 
 <BackButton />
 
 # Баллы по всем предметам
-
-import GradesTableLink from '@site/src/components/GradesTableLink';
 
 <GradesTableLink title="Матан" url="#" shortcutKeys={['м', 'm', 'ь']} />
 <GradesTableLink title="Спецразделы высшей математики" url="#" shortcutKeys={['s', 'с', 'ы', 'c']} />
@@ -17,10 +18,6 @@ import GradesTableLink from '@site/src/components/GradesTableLink';
 <GradesTableLink title="Основы программирования" url="https://docs.google.com/spreadsheets/d/1N8QIKIlwHgSR04MoIb5hCiRmkl2qVq6uWO1BkyICapM/edit?gid=1073736648#gid=1073736648" shortcutKeys={['o', 'о', 'щ', 'j']} />
 <GradesTableLink title="Архитектура ЭВМ" url="https://docs.google.com/spreadsheets/d/1gDMcROqdYmK-Jxq-6HBT_3PSUs0LcioeHvq0ipQ6jXo/edit?usp=sharing" shortcutKeys={['e', 'э', 'у', ',']} />
 
-import EditPageLink from '@site/src/components/EditPageLink';
-
 <EditPageLink filePath="/src/pages/table-grades.mdx" />
-
-import Ads from '@site/src/components/Ads';
 
 <Ads />
