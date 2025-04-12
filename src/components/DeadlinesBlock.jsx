@@ -30,23 +30,38 @@ const formatUnixTimeIntoGCalTime = (unixTimeDeadline) => {
 };
 
 const formatDeadline = (deadline) => {
-    const unixTimeDeadline = Date.parse(deadline.time);
+    let correctTimeFormat = false;
+    let unixTimeDeadline;
+    let dateString;
+
+    try {
+        if (!deadline.time) {
+            throw new Error("Time property is missing");
+        }
+
+        unixTimeDeadline = new Date(deadline.time).getTime();
+
+        if (isNaN(unixTimeDeadline)) {
+            throw new Error("Invalid date format");
+        }
+
+        const options = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', weekday: 'long' };
+        dateString = new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options);
+
+        if (dateString.toLowerCase().includes('invalid')) {
+            throw new Error("Date formatting failed");
+        }
+
+        correctTimeFormat = true;
+
+    } catch (error) {
+        console.warn("Invalid date format: ", deadline.time);
+    }
+
     const unixTimeNow = Date.now();
-    if (unixTimeDeadline <= unixTimeNow) return null;
-
-    const delta = unixTimeDeadline - unixTimeNow;
-    const deltaMinutes = delta / 60000;
-    const deltaHours = deltaMinutes / 60;
-    const deltaDays = deltaHours / 24;
-
-    const deltaHoursSDays = deltaHours - 24 * Math.floor(deltaDays);
-    const deltaMinutesSDays = deltaMinutes - 60 * Math.floor(deltaHours);
 
     let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
-    const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
-    const description = "Дедлайн добавлен с сайта m3102.nawinds.dev";
     const link = deadline.url;
-    const gcalLink = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
 
     let text = "";
     if (link) {
@@ -55,17 +70,37 @@ const formatDeadline = (deadline) => {
         text += `<b style="padding-left: 8px;">${deadlineName}</b>`;
     }
 
-    text += ` &#8212; <a href="${gcalLink}" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
+    if (correctTimeFormat) {
+        if (unixTimeDeadline <= unixTimeNow) return null;
 
-    if (deltaDays < 1) {
-        text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
-    } else if (deltaDays < 3) {
-        text += `${Math.floor(deltaDays)} ${Math.floor(deltaDays) === 1 ? "день" : "дня"} ${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
+        // const delta = unixTimeDeadline - unixTimeNow;
+        // const deltaMinutes = delta / 60000;
+        // const deltaHours = deltaMinutes / 60;
+        // const deltaDays = deltaHours / 24;
+
+        // const deltaHoursSDays = deltaHours - 24 * Math.floor(deltaDays);
+        // const deltaMinutesSDays = deltaMinutes - 60 * Math.floor(deltaHours);
+
+        const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
+        const description = "Дедлайн добавлен с сайта m3102.nawinds.dev";
+        const gcalLink = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
+
+        text += ` &#8212; <a href="${gcalLink}" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
+
+        // if (deltaDays < 1) {
+        //     text += `${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
+        // } else if (deltaDays < 3) {
+        //     text += `${Math.floor(deltaDays)} ${Math.floor(deltaDays) === 1 ? "день" : "дня"} ${Math.floor(deltaHoursSDays)}ч ${Math.floor(deltaMinutesSDays)}м`;
+        // } else {
+        //     text += `${Math.floor(deltaDays)} ${Math.floor(deltaDays) === 3 || Math.floor(deltaDays) === 4 ? "дня" : "дней"}`;
+        // }
+
+        // text += ` (${new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options)}) </a>`;
+        text += ` ${dateString} </a>`;
     } else {
-        text += `${Math.floor(deltaDays)} ${Math.floor(deltaDays) === 3 || Math.floor(deltaDays) === 4 ? "дня" : "дней"}`;
+        text += ` &#8212; ${deadline.time}`;
     }
-    const options = { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', weekday: 'short' };
-    text += ` (${new Date(unixTimeDeadline).toLocaleDateString('ru-RU', options)}) </a>`;
+
     return text;
 };
 
