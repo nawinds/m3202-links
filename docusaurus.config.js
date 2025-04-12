@@ -172,7 +172,7 @@ const config = {
                             },
                             {
                                 label: 'Задонатить',
-                                href: 'https://www.tbank.ru/cf/4tI8tyioxMb',
+                                href: 'https://www.tbank.ru/cf/3AbJDkT6VIA',
                             },
                             {
                                 html: '<a href="#" data-help-popup="">Горячие клавиши</a>',
@@ -219,7 +219,7 @@ const config = {
         [
             '@docusaurus/plugin-google-gtag',
             {
-                trackingID: 'G-31L3HQGM6Q',
+                trackingID: 'G-X90PNLN1EC',
                 anonymizeIP: false,
             },
         ],

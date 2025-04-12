@@ -1,55 +1,44 @@
 {
   "deadlines": [
     {
-      "name": "C++: Лаба 1. WayHome",
-      "time": "25 Feb 2025 23:59:00 GMT+3"
-    },
-    {
-      "name": "Алгосы: Лаба №8",
-      "time": "3 Mar 2025 23:59:00 GMT+3"
-    },
-    {
-      "name": "ЭВМ: Лаба 1.1",
-      "time": "4 Mar 2025 23:59:59 GMT+3"
-    },
-    {
-      "name": "ЭВМ: Лаба 1.2 (soft)",
-      "time": "19 Mar 2025 23:59:59 GMT+3",
-      "url": "https://docs.google.com/document/d/11npNSgySpFy2EQb9KF3dYXWM2O29xWnVAciUWs4NbdM/edit?usp=sharing"
-    },
-    {
-      "name": "ЭВМ: Лаба 1.2 (HARD)",
-      "time": "26 Mar 2025 23:59:59 GMT+3",
-      "url": "https://docs.google.com/document/d/11npNSgySpFy2EQb9KF3dYXWM2O29xWnVAciUWs4NbdM/edit?usp=sharing"
-    },
-    {
-      "name": "Алгосы: Лаба №9. Кратчайшие пути",
-      "time": "19 Mar 2025 23:59:00 GMT+3",
-      "url": "https://sort-me.org/contest/301"
-    },
-    {
-      "name": "C++: Лаба №7. Unrolled List",
-      "time": "18 Mar 2025 23:59:00 GMT+3",
-      "url": "https://classroom.github.com/a/F94lbM9T"
-    },
-    {
-      "name": "C++: Лаба №8. Ranges",
-      "time": "2 Apr 2025 23:59:00 GMT+3",
+      "name": "C++: Лаба №8. Ranges (2-й дедлайн)",
+      "time": "16 Apr 2025 23:59:00 GMT+3",
       "url": "https://classroom.github.com/a/AMw6ugCA"
     },
     {
-      "name": "АиСД: Лаба №10. Дейкстры :)",
-      "time": "2 Apr 2025 23:59:00 GMT+3",
-      "url": "https://sort-me.org/contest/302"
+      "name": "C++: Лаба №9. Шкедулер (0-й дедлайн)",
+      "time": "22 Apr 2025 23:59:00 GMT+3",
+      "url": "https://classroom.github.com/a/AMw6ugCA"
     },
     {
-      "name": "Дискра: ДЗ №5 по графам",
-      "time": ">= 7 дней",
+      "name": "Дискра: Дз №5 по графам",
+      "time": "15 Apr 2025 23:59:00 GMT+3",
       "url": "https://drive.google.com/drive/folders/1BqSgP3mfJwDcF4bdGCj4hu-kGknL1FtI"
     },
     {
-      "name": "Дискретка: ДЗ №4 по формальной логике",
-      "time": "29 Dec 2022 23:55:00 GMT+3"
+      "name": "АрхЭвм 2 (софт)",
+      "time": "16 Apr 2025 23:59:59 GMT+3",
+      "url": "https://classroom.github.com/a/DZDqkhUe" 
+    },
+    {
+      "name": "АрхЭвм 2 (хард)",
+      "time": "23 Apr 2025 23:59:59 GMT+3",
+      "url": "https://classroom.github.com/a/DZDqkhUe" 
+    },
+    {
+      "name": "Ргр Вышмат",
+      "time": "23 Apr 2025 15:30:00 GMT+3",
+      "url": "https://t.me/c/2217428188/177" 
+    },
+    {
+      "name": "Ргр Матан",
+      "time": "23 Apr 2025 15:30:00 GMT+3",
+      "url": "https://t.me/c/2198218096/8102" 
+    },
+    {
+      "name": "АиСД 11. Миссии",
+      "time": "23 Apr 2025 23:59:59 GMT+3",
+      "url": "https://sort-me.org/contest/305/0" 
     }
   ]
 }
