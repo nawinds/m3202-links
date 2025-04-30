@@ -1,13 +1,13 @@
 {
   "deadlines": [
-   {
-      "name": "C++: Лаба №8. Ranges (3-й дедлайн)",
-      "time": "23 Apr 2025 23:59:00 GMT+3",
+    {
+      "name": "C++: Лаба №9. Шкедулер (2-й дедлайн)",
+      "time": "30 Apr 2025 23:59:00 GMT+3",
       "url": "https://classroom.github.com/a/AMw6ugCA"
     },
     {
-      "name": "C++: Лаба №9. Шкедулер (0-й дедлайн)",
-      "time": "23 Apr 2025 23:59:00 GMT+3",
+      "name": "C++: Лаба №9. Шкедулер (3-й дедлайн)",
+      "time": "7 May 2025 23:59:00 GMT+3",
       "url": "https://classroom.github.com/a/AMw6ugCA"
     },
     {
@@ -16,29 +16,9 @@
       "url": "https://drive.google.com/drive/folders/1BqSgP3mfJwDcF4bdGCj4hu-kGknL1FtI"
     },
     {
-      "name": "АрхЭвм 2 (софт)",
-      "time": "23 Apr 2025 23:59:59 GMT+3",
-      "url": "https://classroom.github.com/a/DZDqkhUe" 
-    },
-    {
       "name": "АрхЭвм 2 (хард)",
       "time": "30 Apr 2025 23:59:59 GMT+3",
       "url": "https://classroom.github.com/a/DZDqkhUe" 
-    },
-    {
-      "name": "Ргр Вышмат",
-      "time": "23 Apr 2025 15:30:00 GMT+3",
-      "url": "https://t.me/c/2217428188/177" 
-    },
-    {
-      "name": "Ргр Матан",
-      "time": "23 Apr 2025 15:30:00 GMT+3",
-      "url": "https://t.me/c/2198218096/8102" 
-    },
-    {
-      "name": "АиСД 11. Миссии",
-      "time": "23 Apr 2025 23:59:59 GMT+3",
-      "url": "https://sort-me.org/contest/305/0" 
     }
   ]
 }
