@@ -1,14 +1,14 @@
 {
   "deadlines": [
     {
-      "name": "C++: Лаба №9. Шкедулер (2-й дедлайн)",
-      "time": "30 Apr 2025 23:59:00 GMT+3",
-      "url": "https://classroom.github.com/a/AMw6ugCA"
-    },
-    {
       "name": "C++: Лаба №9. Шкедулер (3-й дедлайн)",
       "time": "7 May 2025 23:59:00 GMT+3",
       "url": "https://classroom.github.com/a/AMw6ugCA"
+    },
+    {
+      "name": "C++: Лаба №10. ITMOScript (0-й дедлайн)",
+      "time": "30 May 2025 23:59:00 GMT+3",
+      "url": "https://classroom.github.com/a/JwSdNObp"
     },
     {
       "name": "Дискра: Дз №6 по графам",
@@ -16,8 +16,13 @@
       "url": "https://drive.google.com/drive/folders/1BqSgP3mfJwDcF4bdGCj4hu-kGknL1FtI"
     },
     {
-      "name": "АрхЭвм 2 (хард)",
-      "time": "30 Apr 2025 23:59:59 GMT+3",
+      "name": "АрхЭвм 3 (софт)",
+      "time": "19 May 2025 23:59:59 GMT+3",
+      "url": "https://classroom.github.com/a/DZDqkhUe" 
+    },
+    {
+      "name": "АрхЭвм 3 (хард)",
+      "time": "25 May 2025 23:59:59 GMT+3",
       "url": "https://classroom.github.com/a/DZDqkhUe" 
     }
   ]
