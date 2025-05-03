@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import {useLocation} from "@docusaurus/router";
 
 const DEADLINES_URL = "/DEADLINES.json";
 
@@ -61,6 +63,7 @@ const formatDeadline = (deadline) => {
     const unixTimeNow = Date.now();
 
     let deadlineName = deadline.name.replace("[Тест]", "📚").replace("[тест]", "📚");
+    deadlineName = deadlineName.replace("[Лекция]", "👨‍🏫").replace("[лекция]", "👨‍🏫");
     const link = deadline.url;
 
     let text = "";
