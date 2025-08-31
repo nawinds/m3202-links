@@ -85,7 +85,7 @@ const formatDeadline = (deadline) => {
         // const deltaMinutesSDays = deltaMinutes - 60 * Math.floor(deltaHours);
 
         const formattedTime = formatUnixTimeIntoGCalTime(unixTimeDeadline);
-        const description = "Дедлайн добавлен с сайта m3102.nawinds.dev";
+        const description = "Дедлайн добавлен с сайта m3202.nawinds.dev";
         const gcalLink = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(deadlineName)}&dates=${formattedTime}/${formattedTime}&details=${encodeURIComponent(description)}&color=6`;
 
         text += ` &#8212; <a href="${gcalLink}" target="_blank" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">`;
